@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(98, 106, 106);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(52, 93, 52);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(53, 53, 53);
+            padding: 3px;
+            box-shadow: 7px 6px 7px 0px rgba(0, 0, 0, 0.468);
+
+
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+        nav > a:hover {
+           text-decoration: underline;
+        }
+        main {
+            background-color: rgb(183, 188, 186);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px;
+            box-shadow: 4px 6px 8px 0px #000000ad;
+        }
+        #assuntos {
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(129, 126, 126);
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(50, 59, 27);
+            border-radius: 5px;
+            box-shadow: 0px 0px 14px 2px black;
+
+            
+        }
+        article {
+            background-color: grey;
+            padding-bottom: 5px;
+            border-radius: 2px;
+        }
+        article > aside {
+            background-color: rgb(68, 108, 55);
+            padding: 0px;
+            border-radius: 5px;
+        }
+        aside > p {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(61, 44, 4);
+            color: lightgrey;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+
+        }
+        footer > p {
+            margin: 0;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(138, 185, 138);
+            margin: 10px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 20px 6px #000000ad;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Investimentos Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aperiam asperiores rem modi molestias dolorum veniam repudiandae aut, reiciendis tempora ipsa impedit numquam ullam! Non sit odio perferendis architecto est.</p>
+                <aside>
+                    <P>Artigo escrito por Diego Moreira</P>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Deselvolvido pelo curso em vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
