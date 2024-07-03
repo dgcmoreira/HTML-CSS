@@ -11,18 +11,41 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(161, 161, 161);
+        }
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(82, 80, 80);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(37, 37, 38);
         }
 
         td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(254, 254, 254);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
         
     </style>
@@ -32,6 +55,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+             CAPTION
              THEAD
                  TR, TD, TH
              TBODY
@@ -40,10 +64,11 @@
                  TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -150,10 +175,60 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur repellendus laboriosam possimus ad id sint sed voluptatibus et consequuntur deserunt rem harum debitis totam, quasi unde. Omnis, rerum quasi.
+    Doloribus, ea aperiam, consectetur magnam sequi vitae vero odit doloremque laboriosam nisi, quos minima dolores. Quia, quibusdam tenetur placeat corrupti, autem cupiditate omnis reprehenderit laboriosam, nisi vitae maxime natus unde!
+    Debitis exercitationem quisquam eligendi ipsum omnis incidunt corporis adipisci, voluptatum, at corrupti, magnam iure cumque. Est ullam veritatis sit voluptatibus esse qui suscipit asperiores placeat, ad, error animi eaque ipsa?
+    Ipsa, quia deserunt? Eum nemo ex blanditiis saepe iste autem ab laudantium eaque rerum voluptas dignissimos quidem fugit corrupti id dolor maiores officiis itaque recusandae quam amet adipisci, iure ratione!
+    Sed dolorem facere magni. Odio atque delectus laborum? Error explicabo quia dolores culpa rem id a fugit. Dolorum dicta maxime itaque doloremque molestias ipsum totam nulla accusamus praesentium, id soluta!</p>
 </body>
 </html>
